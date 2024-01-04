@@ -6,19 +6,27 @@ This is a way to solve the canunlockall problem
 
 def canUnlockAll(boxes):
     """
-    idea: collecting all the found keys and intrepret 
-    if we can open all the boxes by following any giving 
-    way or not
-    comparaison is the key to verify those keys
+    Determine if all boxes can be opened.
+
+    Args:
+    - boxes: A list of lists representing boxes and their keys.
+
+    Returns:
+    - True if all boxes can be opened, False otherwise.
     """
-    keys_for_now = []
-    c = 1
+    visited = [False] * len(boxes)
+    visited[0] = True
+    stack = [0]
+
     for i in range(len(boxes)):
-        for j in range(len(boxes[i])):
-            key = boxes[i][j]
-            if key not in keys_for_now:
-                keys_for_now.append(key)
-                c = c + 1
-        if c == len(boxes):
-            return(True)
-    return(False)
+        current = stack.pop()
+
+        for key in boxes[current]:
+            if not visited[key]:
+                visited[key] = True
+            stack.append(key)
+
+    if False in visited:
+        return False
+    return True
+
