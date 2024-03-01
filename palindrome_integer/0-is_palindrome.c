@@ -9,10 +9,11 @@ int is_palindrome(unsigned long n)
     int i=0;
     sprintf(itself, "%ld", n);
     len = strlen(itself);
-    for (i; i<len/2; i++) {
+    while (i < len/2) {
         if (*(itself + i) != *(itself + len - 1 - i)){
         return 0;
         }
+        i++;
     }
     return 1;
 }
