@@ -5,9 +5,11 @@
 int is_palindrome(unsigned long n)
 {
     char itself[100];
+    int len;
+    int i=0;
     sprintf(itself, "%ld", n);
-    int len = strlen(itself);
-    for (int i=0;i<len/2;i++) {
+    len = strlen(itself);
+    for (i; i<len/2; i++) {
         if (*(itself + i) != *(itself + len - 1 - i)){
         return 0;
         }
