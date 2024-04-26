@@ -7,14 +7,11 @@ request(url, async (error, response, body) => {
   if (!error && response.statusCode === 200) {
     const characters = JSON.parse(body).characters;
     for (const characterUrl of characters) {
-      await new Promise((resolve, reject) => {
+      await new Promise((resolve) => {
         request(characterUrl, (error, response, body) => {
           if (!error && response.statusCode === 200) {
             console.log(JSON.parse(body).name);
             resolve();
-          } else {
-            console.error('Error:', error);
-            reject();
           }
         });
       });
