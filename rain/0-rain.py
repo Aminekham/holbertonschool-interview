@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+Documentation
+"""
 def rain(walls):
     """
     Calculating i will explain the algorithm later
