@@ -2,7 +2,7 @@
 
 def rain(walls):
     """
-    
+    Calculating i will explain the algorithm later
     """
     walls_list = []
     c = 0
