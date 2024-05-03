@@ -2,6 +2,8 @@
 """
 Documentation
 """
+
+
 def rain(walls):
     """
     Calculating i will explain the algorithm later
@@ -14,7 +16,7 @@ def rain(walls):
             walls_list.append(walls[i])
             for j in range(i + 1, len(walls)):
                 if walls[j] == 0:
-                    c+= 1
+                    c += 1
                 else:
                     if c != 0:
                         walls_list.append(c)
