@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import requests
 
+
 def count_words(subreddit, word_list, after='', word_count={}):
     headers = {'User-Agent': 'python:word.count:v1.0'}
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
@@ -30,5 +31,5 @@ def count_words(subreddit, word_list, after='', word_count={}):
             )
             for word, count in sorted_word_count:
                 print(f"{word}: {count}")
-    except:
+    except Exception as e:
         return
