@@ -53,7 +53,7 @@ void sift_down(int *array, int start, int end, size_t size)
  */
 void heapify(int *array, size_t size)
 {
-	int start = (size - 2) / 2; 
+	int start = (size - 2) / 2;
 
 	while (start >= 0)
 	{
