@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This is the rotation module documentation
+"""
+
 
 def rotate_2d_matrix(matrix):
     """
