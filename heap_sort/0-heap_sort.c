@@ -40,7 +40,7 @@ void sift_down(int *array, int start, int end, size_t size)
 		else
 		{
 			swap(&array[root], &array[swap_idx]);
-			print_array(array, size);  // Print the array after every swap
+			print_array(array, size);
 			root = swap_idx;
 		}
 	}
