@@ -23,10 +23,12 @@ void swap(int *a, int *b)
 void sift_down(int *array, int start, int end, size_t size)
 {
 	int root = start;
+
 	while (root * 2 + 1 <= end)
 	{
 		int child = root * 2 + 1;
 		int swap_idx = root;
+
 		if (array[swap_idx] < array[child])
 			swap_idx = child;
 		if (child + 1 <= end && array[swap_idx] < array[child + 1])
@@ -51,7 +53,7 @@ void sift_down(int *array, int start, int end, size_t size)
  */
 void heapify(int *array, size_t size)
 {
-	int start = (size - 2) / 2; // Last parent node
+	int start = (size - 2) / 2; 
 
 	while (start >= 0)
 	{
