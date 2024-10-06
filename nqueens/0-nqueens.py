@@ -18,6 +18,7 @@ if N < 4:
     print('N must be at least 4')
     sys.exit(1)
 
+
 def printSolution(board):
     """Prints the solution as a list of queen positions"""
     solution = []
@@ -26,6 +27,7 @@ def printSolution(board):
             if board[row][col] == 1:
                 solution.append([row, col])
     print(solution)
+
 
 def isSafe(board, row, col):
     """Checks if a queen can be placed at (row, col) without attacks"""
@@ -46,6 +48,7 @@ def isSafe(board, row, col):
         j -= 1
     return True
 
+
 def solveNQUtil(board, col):
     """Utility to solve the N Queens problem recursively"""
     if col == N:
@@ -59,8 +62,10 @@ def solveNQUtil(board, col):
             board[i][col] = 0
     return res
 
+
 def solveNQ():
     """Driver function to initialize the board and start solving"""
     board = [[0] * N for _ in range(N)]
     solveNQUtil(board, 0)
+
 solveNQ()
