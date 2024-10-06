@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""Making the needed coins change"""
+
+
 def makeChange(coins, total):
     """
     Using the dynamic programming
