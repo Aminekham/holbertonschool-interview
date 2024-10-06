@@ -3,7 +3,7 @@
 UTF8 validation
 """
 
-def is_utf8(data):
+def validUTF8(data):
     """Checks whether a sequence of integers represents valid UTF-8 encoding."""
     continuation_bytes = 0
 
