@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""stats metrics"""
+"""
+This module tracks input statistics for file size and HTTP status codes.
+"""
+
 import sys
 
 status_counts = {
