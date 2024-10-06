@@ -68,4 +68,5 @@ def solveNQ():
     board = [[0] * N for _ in range(N)]
     solveNQUtil(board, 0)
 
+
 solveNQ()
