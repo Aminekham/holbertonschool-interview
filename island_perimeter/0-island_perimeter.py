@@ -4,7 +4,13 @@
 
 def island_perimeter(grid):
     """
-    Calculates the perimeter of the island described in grid
+    [summary]
+
+    Args:
+        grid ([type]): [description]
+
+    Returns:
+        [type]: [description]
     """
     perimeter = 0
     for i in range(len(grid)):
