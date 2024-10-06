@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def makeChange(coins, total):
     """
     Using the dynamic programming
