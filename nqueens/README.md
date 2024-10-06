@@ -1,0 +1,1 @@
+# Algorithm for queen placement on board
