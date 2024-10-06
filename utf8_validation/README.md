@@ -1,0 +1,1 @@
+# Validating if its a utf8 code or not
