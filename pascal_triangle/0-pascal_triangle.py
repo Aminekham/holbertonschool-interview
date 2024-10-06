@@ -1,4 +1,4 @@
-#!/usr/env/python3
+#!/usr/bin/python3
 """
 Creating pascal triangle step by step
 """
