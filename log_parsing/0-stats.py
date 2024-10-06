@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
-"""
-stats metrics
-"""
+"""stats metrics"""
 import sys
 
 status_counts = {
